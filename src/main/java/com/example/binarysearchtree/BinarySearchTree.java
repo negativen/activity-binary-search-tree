@@ -176,7 +176,16 @@ public class BinarySearchTree<T extends Comparable> implements Tree<T> {
     }
 
     private void preOrder(BinaryTreeNode<T> node, Queue<T> tempList) {
-        // TODO implement pre order iterator
+        // TODO Implement pre order iterator
+        //NLR
+        /*
+        if (node != null) {
+            tempList.add(node.getElement());
+            preOrder(node.getLeft(), tempList);
+            preOrder(node.getRight(), tempList);
+        }
+
+         */
     }
 
     public Iterator<T> iteratorInOrder() {
